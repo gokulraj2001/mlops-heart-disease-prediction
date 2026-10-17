@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Lint (flake8)
+        run: flake8 .
+
+      - name: Unit tests
+        run: pytest -v --cov=src --cov=api --cov-report=xml --cov-report=term-missing
+
+      - name: Download dataset
+        run: python scripts/download_data.py
+
+      - name: EDA and data cleaning
+        run: python -m src.eda
+
+      - name: Train models (tracked with MLflow)
+        run: python -m src.train --quick
+
+      - name: Upload model, metrics, plots and MLflow runs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-outputs
+          path: |
+            models/
+            reports_out/
+            mlruns/
+            coverage.xml
+            data/processed/
+          if-no-files-found: warn
+
+  docker:
+    needs: test-and-train
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: training-outputs
+
+      - name: Build image
+        run: docker build -t heart-disease-api:ci .
+
+      - name: Run container and smoke test
+        run: |
+          docker run -d --name api -p 8000:8000 heart-disease-api:ci
+          for i in $(seq 1 20); do
+            curl -fs localhost:8000/health && break || sleep 2
+          done
+          ./scripts/smoke_test.sh http://localhost:8000 | tee smoke.log
+
+      - name: Container logs
+        if: always()
+        run: docker logs api > container.log 2>&1 || true
+
+      - name: Upload docker logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-logs
+          path: |
+            smoke.log
+            container.log

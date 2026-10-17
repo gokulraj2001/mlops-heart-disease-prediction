@@ -1,0 +1,16 @@
+.git
+.github
+.venv
+venv
+mlruns
+reports_out
+data
+notebooks
+tests
+screenshots
+report
+k8s
+monitoring
+__pycache__
+*.pyc
+.pytest_cache

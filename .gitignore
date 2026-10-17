@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+mlruns/
+mlartifacts/
+reports_out/
+.pytest_cache/
+.coverage
+.ipynb_checkpoints/
+models_baseline/
