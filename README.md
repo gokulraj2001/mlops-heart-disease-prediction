@@ -77,3 +77,20 @@ In Kubernetes: `kubectl apply -f k8s/monitoring.yaml`, then
 
 ## Notes
 - `models/model.joblib` is a pickle: the serving image pins the same scikit-learn/numpy/pandas as `requirements.txt`. Retrain and rebuild together.
+
+## Lab quick start (Linux)
+`scripts/lab.sh` runs each stage and saves its output to `lab_outputs/`, so nothing needs to be copied or piped by hand.
+```bash
+git clone <repo-url> && cd <repo>
+bash scripts/lab.sh env        # what does this machine provide?
+bash scripts/lab.sh setup      # clean venv + pip install -r requirements.txt
+bash scripts/lab.sh data       # download + EDA (falls back to the committed CSV)
+bash scripts/lab.sh train      # final model + no-hr_reserve baseline
+bash scripts/lab.sh test       # flake8 + pytest
+bash scripts/lab.sh api        # start API, smoke test, stop
+bash scripts/lab.sh docker     # build, run, smoke test, logs   (DOCKER="sudo docker" if needed)
+bash scripts/lab.sh monitor    # API + Prometheus + Grafana + traffic; later: monitor-down
+bash scripts/lab.sh k8s        # deploy manifests, verify through the service
+bash scripts/lab.sh collect    # one lab_evidence.zip to take away
+```
+`bash scripts/lab.sh core` runs env, setup, data, train, test and api in one go.
