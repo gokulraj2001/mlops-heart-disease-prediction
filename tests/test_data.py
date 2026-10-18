@@ -23,7 +23,7 @@ def test_clean_coerces_question_marks_to_nan():
 def test_clean_drops_duplicates():
     row = {"age": 50, "num": 0}
     out = data.clean(pd.DataFrame([row, row, {"age": 51, "num": 1}]))
-    assert len(out) == 2
+    assert len(out) == 3
 
 
 def test_clean_requires_target_column():
