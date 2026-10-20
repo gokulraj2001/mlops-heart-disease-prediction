@@ -1,0 +1,27 @@
+
+=== Download dataset ===
+Downloaded via ucimlrepo: 303 rows x 14 cols
+Saved to /home/s2025ae05059/workspace/mlops-heart-disease-prediction/data/raw/heart_disease_raw.csv
+
+=== EDA ===
+Rows: 303 | Features: 13
+Missing values:
+ ca      4
+thal    2
+dtype: int64
+Class balance:
+ target
+0    0.541
+1    0.459
+Name: proportion, dtype: float64
+Saved cleaned data -> /home/s2025ae05059/workspace/mlops-heart-disease-prediction/data/processed/heart_disease_clean.csv
+corr(target): hr_reserve=0.358  thalach=-0.417
+Figures written to /home/s2025ae05059/workspace/mlops-heart-disease-prediction/reports_out/eda
+Copied EDA figures to screenshots/
+categorical_counts_by_target.png
+class_balance.png
+correlation_heatmap.png
+hr_reserve.png
+missing_values.png
+numeric_boxplots_by_target.png
+numeric_histograms.png

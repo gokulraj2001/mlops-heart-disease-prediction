@@ -1,0 +1,90 @@
+
+=== docker build ===
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 727B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 1.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 172B done
+#3 DONE 0.0s
+
+#4 [1/8] FROM docker.io/library/python:3.12-slim@sha256:a6e34c598f2467ed0e9a8d349809fcd8b5c603269512df273a0bb1784edc11b1
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 1.26kB 0.0s done
+#5 DONE 0.0s
+
+#6 [6/8] COPY api/ ./api/
+#6 CACHED
+
+#7 [5/8] COPY src/ ./src/
+#7 CACHED
+
+#8 [3/8] COPY requirements-serve.txt .
+#8 CACHED
+
+#9 [4/8] RUN pip install --no-cache-dir -r requirements-serve.txt
+#9 CACHED
+
+#10 [7/8] COPY models/model.joblib models/metrics.json ./models/
+#10 CACHED
+
+#11 [2/8] WORKDIR /app
+#11 CACHED
+
+#12 [8/8] RUN useradd --create-home --uid 10001 appuser && chown -R appuser /app
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 writing image sha256:74b07450ba7567adaf91e07a4ee6c7b64f2bb4e30d7fcfb0c561063f1bd39abc done
+#13 naming to docker.io/library/heart-disease-api:latest done
+#13 DONE 0.0s
+
+=== image size ===
+REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
+heart-disease-api   latest    74b07450ba75   17 minutes ago   524MB
+
+=== docker run ===
+886de4ea0cd0f43cc909219cf05ad11659ab69bc244b1c348cf4803a2943202e
+API healthy after 6s
+
+=== Smoke test against the container ===
+== /health
+{"status":"ok","model":"random_forest"}
+== /predict
+{"prediction":0,"label":"heart disease unlikely","confidence":0.6093,"probability_disease":0.3907,"risk_band":"medium","model_name":"random_forest"}
+== invalid input must be rejected (422)
+OK (422)
+== /metrics
+api_requests_total{endpoint="/health",method="GET",status="200"} 2.0
+api_requests_total{endpoint="/predict",method="POST",status="200"} 1.0
+api_requests_total{endpoint="/predict",method="POST",status="422"} 1.0
+SMOKE TEST PASSED
+
+=== docker ps ===
+CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS                            PORTS                                         NAMES
+886de4ea0cd0   heart-disease-api:latest   "uvicorn api.app:app…"   6 seconds ago   Up 5 seconds (health: starting)   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp   api
+
+=== container logs ===
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+2026-10-20 15:08:58,864 INFO heart-api model loaded from /app/models/model.joblib (random_forest)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-10-20 15:08:59,762 INFO heart-api request method=GET path=/health status=200 latency_ms=1.9 client=172.17.0.1
+INFO:     172.17.0.1:39710 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 15:08:59,792 INFO heart-api request method=GET path=/health status=200 latency_ms=0.9 client=172.17.0.1
+INFO:     172.17.0.1:39718 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 15:08:59,918 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+2026-10-20 15:08:59,920 INFO heart-api request method=POST path=/predict status=200 latency_ms=112.0 client=172.17.0.1
+INFO:     172.17.0.1:39730 - "POST /predict HTTP/1.1" 200 OK
+2026-10-20 15:08:59,940 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.9 client=172.17.0.1
+INFO:     172.17.0.1:39740 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:39750 - "GET /metrics HTTP/1.1" 200 OK

@@ -1,0 +1,15 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+2026-10-20 15:08:58,864 INFO heart-api model loaded from /app/models/model.joblib (random_forest)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-10-20 15:08:59,762 INFO heart-api request method=GET path=/health status=200 latency_ms=1.9 client=172.17.0.1
+INFO:     172.17.0.1:39710 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 15:08:59,792 INFO heart-api request method=GET path=/health status=200 latency_ms=0.9 client=172.17.0.1
+INFO:     172.17.0.1:39718 - "GET /health HTTP/1.1" 200 OK
+2026-10-20 15:08:59,918 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+2026-10-20 15:08:59,920 INFO heart-api request method=POST path=/predict status=200 latency_ms=112.0 client=172.17.0.1
+INFO:     172.17.0.1:39730 - "POST /predict HTTP/1.1" 200 OK
+2026-10-20 15:08:59,940 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.9 client=172.17.0.1
+INFO:     172.17.0.1:39740 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.17.0.1:39750 - "GET /metrics HTTP/1.1" 200 OK

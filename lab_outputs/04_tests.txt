@@ -1,0 +1,197 @@
+
+=== flake8 ===
+flake8 clean
+
+=== pytest ===
+============================= test session starts ==============================
+platform linux -- Python 3.12.9, pytest-8.3.2, pluggy-1.7.0 -- /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/s2025ae05059/workspace/mlops-heart-disease-prediction
+configfile: pytest.ini
+testpaths: tests
+plugins: cov-5.0.0, anyio-4.15.1
+collecting ... collected 49 items
+
+tests/test_api.py::test_health_ok PASSED                                 [  2%]
+tests/test_api.py::test_predict_returns_prediction_and_confidence PASSED [  4%]
+tests/test_api.py::test_predict_accepts_null_for_ca_and_thal PASSED      [  6%]
+tests/test_api.py::test_predict_accepts_missing_optional_fields PASSED   [  8%]
+tests/test_api.py::test_predict_rejects_invalid_values[age--5] PASSED    [ 10%]
+tests/test_api.py::test_predict_rejects_invalid_values[sex-2] PASSED     [ 12%]
+tests/test_api.py::test_predict_rejects_invalid_values[cp-9] PASSED      [ 14%]
+tests/test_api.py::test_predict_rejects_invalid_values[thal-5] PASSED    [ 16%]
+tests/test_api.py::test_predict_rejects_invalid_values[chol-abc] PASSED  [ 18%]
+tests/test_api.py::test_predict_rejects_invalid_values[oldpeak-50] PASSED [ 20%]
+tests/test_api.py::test_predict_rejects_missing_required_field PASSED    [ 22%]
+tests/test_api.py::test_metrics_endpoint_counts_requests PASSED          [ 24%]
+tests/test_api.py::test_health_503_when_model_missing PASSED             [ 26%]
+tests/test_data.py::test_clean_binarises_target PASSED                   [ 28%]
+tests/test_data.py::test_clean_coerces_question_marks_to_nan PASSED      [ 30%]
+tests/test_data.py::test_clean_drops_duplicates PASSED                   [ 32%]
+tests/test_data.py::test_clean_requires_target_column PASSED             [ 34%]
+tests/test_data.py::test_clean_keeps_missing_for_pipeline_to_impute PASSED [ 36%]
+tests/test_data.py::test_split_xy_shapes_and_dtype PASSED                [ 38%]
+tests/test_data.py::test_load_raw_missing_file_gives_helpful_error PASSED [ 40%]
+tests/test_data.py::test_save_processed_roundtrip PASSED                 [ 42%]
+tests/test_model.py::test_model_spaces_contain_three_families PASSED     [ 44%]
+tests/test_model.py::test_saved_pipeline_predicts_probabilities PASSED   [ 46%]
+tests/test_model.py::test_train_end_to_end_quick PASSED                  [ 48%]
+tests/test_model.py::test_required_metrics_are_configured[accuracy] PASSED [ 51%]
+tests/test_model.py::test_required_metrics_are_configured[precision] PASSED [ 53%]
+tests/test_model.py::test_required_metrics_are_configured[recall] PASSED [ 55%]
+tests/test_model.py::test_required_metrics_are_configured[roc_auc] PASSED [ 57%]
+tests/test_model.py::test_baseline_flag_runs_without_hr_reserve PASSED   [ 59%]
+tests/test_preprocessing.py::test_output_has_no_nans_even_with_missing_input PASSED [ 61%]
+tests/test_preprocessing.py::test_numeric_columns_are_standardised PASSED [ 63%]
+tests/test_preprocessing.py::test_unseen_category_does_not_crash PASSED  [ 65%]
+tests/test_preprocessing.py::test_imputer_uses_training_statistics_only PASSED [ 67%]
+tests/test_preprocessing.py::test_hr_reserve_formula_and_no_mutation PASSED [ 69%]
+tests/test_preprocessing.py::test_hr_reserve_known_value PASSED          [ 71%]
+tests/test_preprocessing.py::test_feature_switch_changes_output_width PASSED [ 73%]
+tests/test_preprocessing.py::test_hr_reserve_handles_missing_inputs PASSED [ 75%]
+tests/test_risk.py::test_band_boundaries[0.0-low] PASSED                 [ 77%]
+tests/test_risk.py::test_band_boundaries[0.1-low] PASSED                 [ 79%]
+tests/test_risk.py::test_band_boundaries[0.3299-low] PASSED              [ 81%]
+tests/test_risk.py::test_band_boundaries[0.33-medium] PASSED             [ 83%]
+tests/test_risk.py::test_band_boundaries[0.5-medium] PASSED              [ 85%]
+tests/test_risk.py::test_band_boundaries[0.6599-medium] PASSED           [ 87%]
+tests/test_risk.py::test_band_boundaries[0.66-high] PASSED               [ 89%]
+tests/test_risk.py::test_band_boundaries[0.9-high] PASSED                [ 91%]
+tests/test_risk.py::test_band_boundaries[1.0-high] PASSED                [ 93%]
+tests/test_risk.py::test_out_of_range_probability_rejected[-0.01] PASSED [ 95%]
+tests/test_risk.py::test_out_of_range_probability_rejected[1.01] PASSED  [ 97%]
+tests/test_risk.py::test_thresholds_are_ordered PASSED                   [100%]
+
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/starlette/formparsers.py:12
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/starlette/formparsers.py:12: PendingDeprecationWarning: Please use `import python_multipart` instead.
+    import multipart
+
+.venv/lib/python3.12/site-packages/starlette/testclient.py:41
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/starlette/testclient.py:41: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    [], typing.ContextManager[anyio.abc.BlockingPortal]
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:61
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:61: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("togetherai_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:75
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:75: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("cohere_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:83
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:83: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("ai21labs_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:92
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:92: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("mosaicml_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:122
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:122: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("openai_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:179
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:179: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("anthropic_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:187
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:187: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("palm_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:227
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:227: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("mistral_api_key", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:308
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:308: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("provider", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:329
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:329: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("config", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:369
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:369: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("name")
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:379
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:379: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("model", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:390
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:390: PydanticDeprecatedSince20: Pydantic V1 style `@root_validator` validators are deprecated. You should migrate to Pydantic V2 style `@model_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @root_validator(skip_on_failure=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:412
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:412: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("route_type", pre=True)
+
+.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:418
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/gateway/config.py:418: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    @validator("limit", pre=True)
+
+.venv/lib/python3.12/site-packages/pydantic/_internal/_config.py:291
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/pydantic/_internal/_config.py:291: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.8/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89
+.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+.venv/lib/python3.12/site-packages/matplotlib/_mathtext.py:45
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+tests/test_api.py: 1 warning
+tests/test_model.py: 20 warnings
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:455: DeprecationWarning: scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0.
+    opt_res = optimize.minimize(
+
+tests/test_model.py::test_train_end_to_end_quick
+tests/test_model.py::test_train_end_to_end_quick
+tests/test_model.py::test_train_end_to_end_quick
+tests/test_model.py::test_baseline_flag_runs_without_hr_reserve
+tests/test_model.py::test_baseline_flag_runs_without_hr_reserve
+tests/test_model.py::test_baseline_flag_runs_without_hr_reserve
+  /home/s2025ae05059/workspace/mlops-heart-disease-prediction/.venv/lib/python3.12/site-packages/mlflow/models/model.py:321: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    self.utc_time_created = str(utc_time_created or datetime.utcnow())
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+---------- coverage: platform linux, python 3.12.9-final-0 -----------
+Name                   Stmts   Miss  Cover   Missing
+----------------------------------------------------
+api/__init__.py            0      0   100%
+api/app.py                81      1    99%   80
+api/metrics.py             8      0   100%
+api/risk.py               10      0   100%
+api/schemas.py            32      0   100%
+src/__init__.py            0      0   100%
+src/config.py             17      0   100%
+src/data.py               25      1    96%   17
+src/eda.py                88     88     0%   6-128
+src/preprocessing.py      21      0   100%
+src/train.py             121      2    98%   164, 222
+----------------------------------------------------
+TOTAL                    403     92    77%
+
+================= 49 passed, 59 warnings in 148.82s (0:02:28) ==================

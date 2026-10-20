@@ -1,0 +1,24 @@
+
+=== Environment ===
+host: ip-10-3-22-44.ap-south-1.compute.internal
+date: Sun Oct 18 07:30:08 PM IST 2026
+user: s2025ae05059
+Linux 5.14.0-503.14.1.el9_5.x86_64
+
+=== Tools (NOT FOUND is fine to report - see fallbacks) ===
+python3   Python 3.12.9
+git       git version 2.43.5
+curl      curl 7.76.1 (x86_64-redhat-linux-gnu) libcurl/7.76.1 OpenSSL/3.2.2 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0
+docker    Docker version 28.0.1, build 068a01e
+kubectl   NOT FOUND
+minikube  minikube version: v1.35.0
+
+=== Internet checks ===
+https://pypi.org                   HTTP 200
+https://archive.ics.uci.edu        HTTP 200
+https://registry-1.docker.io       HTTP 404
+https://github.com                 HTTP 200
+
+=== Docker daemon / cluster ===
+docker daemon: reachable
+kubernetes: no cluster reachable yet

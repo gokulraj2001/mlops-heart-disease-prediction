@@ -1,0 +1,303 @@
+api-1  | 2026-10-18 19:09:06,529 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:06,532 INFO heart-api request method=POST path=/predict status=200 latency_ms=96.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:06,746 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:06,747 INFO heart-api request method=POST path=/predict status=200 latency_ms=96.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:06,959 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:06,960 INFO heart-api request method=POST path=/predict status=200 latency_ms=97.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:07,170 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:07,172 INFO heart-api request method=POST path=/predict status=200 latency_ms=96.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:07,377 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:07,379 INFO heart-api request method=POST path=/predict status=200 latency_ms=92.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:07,582 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:07,583 INFO heart-api request method=POST path=/predict status=200 latency_ms=89.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:07,784 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:07,785 INFO heart-api request method=POST path=/predict status=200 latency_ms=84.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:07,980 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:07,981 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:08,173 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:08,174 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:08,365 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:08,366 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:08,558 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:08,559 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:08,751 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:08,752 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:08,946 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:08,947 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:09,142 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:09,143 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:09,336 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:09,337 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:09,595 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:09,596 INFO heart-api request method=POST path=/predict status=200 latency_ms=144.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:09,787 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:09,788 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:09,978 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:09,979 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:10,169 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:10,170 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:10,362 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:10,363 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:10,558 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:10,560 INFO heart-api request method=POST path=/predict status=200 latency_ms=82.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:10,756 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:10,757 INFO heart-api request method=POST path=/predict status=200 latency_ms=82.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:10,952 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:10,953 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:11,147 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:11,148 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:11,263 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:11,457 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:11,458 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:11,651 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:11,653 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:11,847 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:11,848 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:12,041 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:12,043 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:12,236 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:12,237 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:12,432 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:12,433 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:12,627 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:12,628 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:12,819 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:12,820 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:13,011 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:13,012 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:13,203 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:13,204 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:13,395 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:13,396 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:13,588 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:13,589 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:13,782 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:13,783 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:13,973 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:13,973 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:14,167 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:14,168 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:14,359 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:14,360 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:14,552 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:14,553 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:14,743 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:14,744 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:14,938 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:14,939 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:15,131 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:15,132 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:15,323 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:15,324 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:15,514 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:15,515 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:15,707 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:15,708 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:15,897 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:15,898 INFO heart-api request method=POST path=/predict status=200 latency_ms=76.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:16,013 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:16,204 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:16,205 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:16,398 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:16,399 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:16,591 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:16,592 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:16,781 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:16,782 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:16,971 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:16,972 INFO heart-api request method=POST path=/predict status=200 latency_ms=76.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:17,168 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:17,169 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:17,360 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:17,361 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:17,553 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:17,554 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:17,745 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:17,746 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:17,940 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:17,941 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:18,134 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:18,135 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:18,326 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:18,326 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:18,516 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:18,517 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:18,710 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:18,710 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:18,902 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:18,903 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:19,095 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:19,096 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:19,286 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:19,288 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:19,481 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:19,482 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:19,674 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:19,675 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:19,866 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:19,866 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:20,056 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:20,057 INFO heart-api request method=POST path=/predict status=200 latency_ms=76.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:20,249 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:20,250 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:20,442 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:20,443 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:20,635 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:20,636 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:20,751 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:20,942 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:20,943 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:21,134 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:21,134 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:21,325 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:21,326 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:21,518 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:21,519 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:21,710 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:21,711 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:21,905 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:21,905 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:22,106 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:22,107 INFO heart-api request method=POST path=/predict status=200 latency_ms=87.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:22,299 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:22,300 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:22,492 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:22,493 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:22,685 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:22,686 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:22,876 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:22,877 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:23,078 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:23,079 INFO heart-api request method=POST path=/predict status=200 latency_ms=88.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:23,276 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:23,277 INFO heart-api request method=POST path=/predict status=200 latency_ms=82.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:23,472 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:23,473 INFO heart-api request method=POST path=/predict status=200 latency_ms=82.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:23,667 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:23,668 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:23,860 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:23,861 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:24,058 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:24,059 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:24,251 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:24,252 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:24,444 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:24,445 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:24,631 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:24,632 INFO heart-api request method=POST path=/predict status=200 latency_ms=73.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:24,813 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:24,815 INFO heart-api request method=POST path=/predict status=200 latency_ms=67.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:25,007 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:25,007 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:25,200 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:25,201 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:25,415 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:25,416 INFO heart-api request method=POST path=/predict status=200 latency_ms=93.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:25,533 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:25,726 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:25,727 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:25,918 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:25,919 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:26,113 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:26,113 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:26,306 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:26,307 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:26,498 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:26,499 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:26,692 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:26,694 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:26,884 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:26,885 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:27,078 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:27,079 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:27,275 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:27,276 INFO heart-api request method=POST path=/predict status=200 latency_ms=83.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:27,470 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:27,471 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:27,669 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:27,670 INFO heart-api request method=POST path=/predict status=200 latency_ms=84.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:27,879 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:27,880 INFO heart-api request method=POST path=/predict status=200 latency_ms=92.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:28,073 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:28,073 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:28,264 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:28,266 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:28,491 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:28,492 INFO heart-api request method=POST path=/predict status=200 latency_ms=112.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:28,692 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:28,693 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:28,884 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:28,885 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:29,080 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:29,081 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:29,271 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:29,272 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:29,465 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:29,465 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:29,689 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:29,690 INFO heart-api request method=POST path=/predict status=200 latency_ms=111.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:29,890 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:29,891 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:30,093 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:30,094 INFO heart-api request method=POST path=/predict status=200 latency_ms=88.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:30,286 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:30,287 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.7 client=172.18.0.1
+api-1  | 2026-10-18 19:09:30,402 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:30,592 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:30,593 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:30,785 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:30,785 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:30,977 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:30,978 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:31,169 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:31,170 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:31,362 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:31,363 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:31,554 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:31,555 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:31,746 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:31,747 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:31,941 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:31,942 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.5 client=172.18.0.1
+api-1  | 2026-10-18 19:09:32,135 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:32,136 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:32,328 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:32,329 INFO heart-api request method=POST path=/predict status=200 latency_ms=80.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:32,521 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:32,522 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:32,712 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:32,713 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:32,905 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:32,905 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.4 client=172.18.0.1
+api-1  | 2026-10-18 19:09:33,096 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:33,097 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.1 client=172.18.0.1
+api-1  | 2026-10-18 19:09:33,289 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:33,290 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.6 client=172.18.0.1
+api-1  | 2026-10-18 19:09:33,484 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:33,485 INFO heart-api request method=POST path=/predict status=200 latency_ms=82.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:33,676 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:33,678 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:33,871 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:33,872 INFO heart-api request method=POST path=/predict status=200 latency_ms=81.2 client=172.18.0.1
+api-1  | 2026-10-18 19:09:34,062 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:34,063 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:34,254 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:34,255 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:34,446 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:34,447 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.3 client=172.18.0.1
+api-1  | 2026-10-18 19:09:34,637 INFO heart-api prediction=0 probability=0.0929 risk_band=low confidence=0.9071
+api-1  | 2026-10-18 19:09:34,638 INFO heart-api request method=POST path=/predict status=200 latency_ms=77.8 client=172.18.0.1
+api-1  | 2026-10-18 19:09:34,829 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:09:34,830 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.0 client=172.18.0.1
+api-1  | 2026-10-18 19:09:35,022 INFO heart-api prediction=1 probability=0.7687 risk_band=high confidence=0.7687
+api-1  | 2026-10-18 19:09:35,023 INFO heart-api request method=POST path=/predict status=200 latency_ms=78.9 client=172.18.0.1
+api-1  | 2026-10-18 19:09:35,137 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1
+api-1  | 2026-10-18 19:10:05,063 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:10:05,064 INFO heart-api request method=POST path=/predict status=200 latency_ms=87.8 client=172.18.0.1
+api-1  | 2026-10-18 19:10:05,083 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.7 client=172.18.0.1
+api-1  | 2026-10-18 19:10:05,212 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:10:05,213 INFO heart-api request method=POST path=/predict status=200 latency_ms=79.8 client=172.18.0.1
+api-1  | 2026-10-18 19:10:05,226 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1
+api-1  | 2026-10-18 19:10:05,354 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+api-1  | 2026-10-18 19:10:05,355 INFO heart-api request method=POST path=/predict status=200 latency_ms=84.5 client=172.18.0.1
+api-1  | 2026-10-18 19:10:05,368 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.4 client=172.18.0.1

@@ -1,0 +1,24 @@
+
+=== Start API on :8000 ===
+API healthy after 8s
+
+=== Smoke test ===
+== /health
+{"status":"ok","model":"random_forest"}
+== /predict
+{"prediction":0,"label":"heart disease unlikely","confidence":0.6093,"probability_disease":0.3907,"risk_band":"medium","model_name":"random_forest"}
+== invalid input must be rejected (422)
+OK (422)
+== /metrics
+api_requests_total{endpoint="/health",method="GET",status="200"} 2.0
+api_requests_total{endpoint="/predict",method="POST",status="200"} 1.0
+api_requests_total{endpoint="/predict",method="POST",status="422"} 1.0
+SMOKE TEST PASSED
+
+=== Server log (last lines) ===
+2026-10-19 00:08:19,246 INFO heart-api model loaded from /home/s2025ae05059/workspace/mlops-heart-disease-prediction/models/model.joblib (random_forest)
+2026-10-19 00:08:19,475 INFO heart-api request method=GET path=/health status=200 latency_ms=1.6 client=127.0.0.1
+2026-10-19 00:08:19,496 INFO heart-api request method=GET path=/health status=200 latency_ms=1.2 client=127.0.0.1
+2026-10-19 00:08:19,630 INFO heart-api prediction=0 probability=0.3907 risk_band=medium confidence=0.6093
+2026-10-19 00:08:19,632 INFO heart-api request method=POST path=/predict status=200 latency_ms=120.6 client=127.0.0.1
+2026-10-19 00:08:19,650 INFO heart-api request method=POST path=/predict status=422 latency_ms=1.5 client=127.0.0.1
